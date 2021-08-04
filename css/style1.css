@@ -1,0 +1,773 @@
+/*
+Author : Faria Hasan, Naib Uddin
+Theme : Food ordering website
+version : 1.0
+*/
+
+/*CSS for all*/
+*{
+    margin: 0 0;
+    padding : 0 0;
+    font-family: 'work-sans','quicksand';
+
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.img-responsive{
+    width: 100%;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix{
+    clear:both;
+    float: none;
+}
+a{
+    text-decoration:none;
+    color: coral;
+}
+a:hover{
+    color:teal;
+   
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.btn-primary{
+    background-color: coral;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    background-color: teal;
+    color: white;
+}
+
+h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left:33%;
+}
+
+.text-white{
+    color:white;
+}
+
+/* CSS for Navbar section and sticky menu work */
+.logo{
+    position: fixed;
+    width:10%;
+    float: left;
+    margin: -10px 0 0 0;
+   
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 1% 0 1% 0;
+    transition: 1s linear;
+    z-index: 2;
+    
+}
+
+nav.black{
+    background: rgb(255, 255, 255);
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+  
+}
+
+.menu{
+    line-height: 50px;
+   
+    
+}
+
+.menu ul{
+    list-style-type: none;
+    float: right;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 1% 4%;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+/* Mobile Menu */
+.mobile-menu span{
+    color: black;
+    font-size: 2rem;
+    float: right;
+    margin-top: 1rem;
+    display: none;
+}
+
+.mobile-menu span:hover{
+    cursor: pointer;
+}
+
+.overlay{
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.85);
+    overflow-x: hidden;
+    transition: .5s;
+}
+.overlay-content{
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    
+}
+.overlay a{
+    display: block;
+    font-size: 2.5rem;
+    text-transform:capitalize;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+
+}
+.overlay a:hover{
+    color: white;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+    font-size: 4rem;
+}
+
+
+/* CSS for food-search section */
+.food-search{
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)) ,url(../images/pic15jpg.jpg);
+    padding:12% 0;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position:center;
+   
+}
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.text h1{
+    font-size: 59px;
+    padding: 0 0 15px 0;
+    color: teal;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+.text p{
+    font-size: 29px;
+    padding: 0 0 30px 0;
+    color: black;
+    font-weight: 700;
+}
+
+
+
+.food-signup{
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)) ,url(../images/signup5.jpg);
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.signupbox{
+    width: 550px;
+    height: auto;
+    background: white;
+    color: black;
+    top: -30%;
+   left: 50%;
+    position: absolute;
+    transform: translate(-50%,50%);
+    box-sizing: border-box;
+    padding: 35px 30px;
+    opacity: 0.95;
+}
+.signupbox h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: coral;
+ }
+ .signupbox p{
+     font-weight: 700;
+     margin-top:12px ;
+     margin-bottom: 5px;
+     font-size: 19px;
+ }
+ .signupbox.userp{
+     margin-bottom: 12px;
+ }
+ .signupbox input{
+     width: 100%;
+     margin-bottom: 15px;
+   
+ }
+ 
+ .signupbox input[type="text"],input[type="password"]
+ {
+     border: none;
+     border-bottom: 1px solid black;
+     background:transparent ;
+     outline: none;
+     height : 40px;
+     color: black;
+     font-size: 21px;
+ 
+ }
+ .signupbox input[type="password"]
+ {
+     border: none;
+     border-bottom: 1px solid black;
+     background:transparent ;
+     outline: none;
+     height : 40px;
+     color: black;
+     font-size: 21px;
+ 
+ }
+ .signupbox input[type="email"]{
+    border: none;
+    border-bottom: 1px solid black;
+    background:transparent ;
+    outline: none;
+    height : 40px;
+    color: black;
+    font-size: 21px;
+}
+ .signupbox select{
+   margin-bottom: 15px;
+   color: black;
+   background-color: white;
+   border: 1px solid black;
+   font-size: 19px;
+   font-weight: 600;
+ }
+ .signupbox input[type="submit"]{
+     border: none;
+     outline: none;
+     height: 40px;
+     background: coral;
+     color: black;
+     font-size: 18px;
+     border-radius: 20px;
+     font-weight: 700;
+ }
+ .signupbox input[type="submit"]:hover{
+     cursor: pointer;
+     background:teal;
+ }
+ .signupbox a{
+     line-height: 20px;
+ }
+
+
+
+/*CSS for Forget Password page*/
+.food-forget{
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)) ,url(../images/pic15jpg.jpg);
+    height: 120vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.forget{
+    height: auto;
+   top:-10%
+}
+/*CSS for Restaurants */
+.restaurant {
+    padding:3% 0;
+    background-color: whitesmoke;
+    z-index: 1;
+   
+}
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+    margin-top: 60px;
+    transition: .5s linear;
+}
+.box-3:hover{
+    transform: scale(1.05);
+}
+.background{
+    background-color: teal;
+    padding: 4%;
+}
+.restaurant h2{
+    font-style: oblique;
+    color: teal;
+}
+.restaurant p{
+    font-size: 23px;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+/*CSS for Specialities */
+.specialities{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../images/pic14.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.special-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.special-box{
+    max-width:28%;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top:100px;
+    margin-bottom:100px;
+    background: white;
+    color: black;
+    opacity: 0.9;
+    border-radius: 30px;
+    transition: .5s linear;
+}
+.special-box:hover{
+    background:teal;
+    color:white;
+    transform: scale(1.05);
+    transition: .5s linear;
+}
+.special-box:hover p{
+    color: white;
+}
+.special-box:hover .icon
+{
+    background: white;
+
+}
+.special-box h3{
+    margin-bottom: 10px;
+    font-size: 29px;
+
+}
+
+.special-box p{
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+    
+}
+
+.icon{
+    display: inline-block;
+    padding: 5%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: black;
+
+}
+.icon i{
+    font-size: 50px;
+   
+}
+
+
+/*CSS for Our team */
+.our-team{
+    padding: 2%;
+    margin-top: 60px;
+   
+}
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+ 
+}
+.team-member{
+    width: 30%;
+    margin: 35px;
+    margin-top: 60px;
+    padding:60px 0;
+    background-color: whitesmoke;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: .5s linear;
+  
+}
+.team-member:hover{
+    transform: scale(1.05);
+    transition: .5s linear;
+}
+
+
+.team-member img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.team-member img,h2,p,ul{
+    display: flex;
+    justify-content: center;
+}
+.text-member h2{
+    font-size: 29px;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+.team-member p{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+.social-link{
+    margin-top: 20px;
+}
+.social-link ul li{
+    display:inline-block;
+    margin: 0 5px;
+}
+.social-link ul li a{
+    color:black;
+
+}
+.social-link ul li a:link i::before{
+    background: whitesmoke;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: .5s linear;
+}
+.social-link ul li a:hover i::before
+{
+    background-color: teal;
+    color: white;
+    transform: rotate(360deg);
+}
+
+/*CSS for Footer */
+
+.foot{
+    width: 45%;
+    float: left;
+    margin-top: 40px;
+   
+}
+.logo1{
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 10px;
+}
+.footer
+{ 
+    background-color: whitesmoke;
+}
+.foot h3
+{
+    margin-bottom: 10px;
+    font-size: 29px;
+}
+.email{
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: teal;
+    font-weight: 700;
+}
+.mobile{
+    font-size: 18px;
+    font-weight: 600;
+    color: teal;
+}
+.copy{
+    padding: 3rem;
+}
+
+/*CSS for login.php page*/
+.food-login{
+    background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)) ,url(../images/login5.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top;
+}
+.loginbox{
+    padding: 3% 0 2% 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.loginbhitore{
+    width: 450px;
+    height: 420px;
+    background: black;
+    color: white;
+ 
+    box-sizing: border-box;
+    padding: 35px 30px;
+    opacity: 0.8;
+
+}
+.login-h1{
+    padding: 14% 0 1% 0;
+    font-size: 55px;
+    font-style: oblique;
+    color: coral;
+}
+
+
+
+.loginbox p{
+    font-weight: 700;
+    margin-top:12px ;
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+.loginbox .userp{
+    margin-bottom: 12px;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 15px;
+  
+}
+
+.loginbox input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background:transparent ;
+    outline: none;
+    height : 40px;
+    color: white;
+    font-size: 21px;
+
+}
+.loginbox input[type="email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background:transparent ;
+    outline: none;
+    height : 40px;
+    color: white;
+    font-size: 21px;
+}
+.loginbox select{
+  margin-bottom: 15px;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  font-size: 19px;
+  font-weight: 600;
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: coral;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover{
+    cursor: pointer;
+    background:teal;
+}
+.loginbox a{
+    line-height: 20px;
+}
+
+/*CSS for owner.php*/
+.container .owner-k-dak-dibo{
+    padding: 50px 0 0 0 ;
+    font-size: 55px;
+    font-style: oblique;
+    color: rgb(113, 211, 211);
+
+}
+
+.container .owner-pickupline{
+    margin-top: 40px;
+    font-size:29px;
+    color: white;
+    font-style: oblique;
+    
+   
+}
+.welcome-img{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0)) ,url(../images/ownerdeal.jpg);
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position:center;
+   
+}
+.welcome{
+   padding: 7%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.restaurant-info{
+    width: 450px;
+    height: 400px;
+    background: black;
+    color: white;
+ 
+    box-sizing: border-box;
+    padding: 35px 30px;
+    opacity: 0.8;
+    
+}
+.restaurant-info input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background:transparent ;
+    outline: none;
+    height : 40px;
+    color: white;
+    font-size: 21px;
+
+}
+.restaurant-info input{
+    width: 100%;
+    margin-bottom: 15px;
+  
+}
+
+.restaurant-info input[type="file"]{
+   color: white;
+    font-size: 21px;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   
+
+    
+
+}
+.restaurant-info input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: teal;
+    color: white;
+    font-size: 18px;
+   border-radius:20px ;
+   font-weight: 700;
+}
+.restaurant-info input[type="submit"]:hover{
+    background: coral;
+}
+.restaurant-info p{
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: coral;
+}
+
+/*CSS for restaurant.php*/
+.h2-padding{
+    padding: 10% 0 2% 0;
+}
+
+/*CSS for food.php*/
+.food-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.food-box{
+    max-width:28%;
+    padding: 1%;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top:100px;
+    margin-bottom:100px;
+    background: white;
+    color: black;
+    opacity: 0.9;
+    border-radius: 30px;
+    transition: .5s linear;
+   
+}
+.food-box:hover{
+    background: teal;
+    color: white;
+    transform: scale(1.05);
+}
+.food-box a:hover{
+    background: coral;
+   
+}
+.food-box h3{
+    margin-top: 15px;
+}
+.food-box h4{
+    margin-top: 10px;
+    font-size: 21px;
+}
+.food-box p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.food h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 35px;
+    color: coral;
+}

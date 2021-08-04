@@ -1,0 +1,123 @@
+@media screen and (max-width:1200px){
+    .logo{
+        width: 14%;
+        margin: 0;
+    }
+}
+@media screen and (max-width:1024px) {
+    .mobile-menu span{
+        display: block;
+    } 
+    .logo{
+        width: 18%;
+        margin: 0;
+    }
+    .menu ul{
+        display: none;
+    }
+    .food-search{
+     height:40vh;
+    }
+    .food-search h1{
+        font-size: 39px;
+        margin-top: 80px;
+    }
+    .food-search p{
+        font-size: 25px;
+    }
+    .food-search input[type="search"]{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .food-search .btn{
+        padding: 2%;
+    }
+    .restaurant h2{
+        font-size: 39px;
+    }
+    .box-3{
+        width: 70%;
+        float: none;
+        margin:40px auto;
+    }
+    .special-box{
+        max-width: 90%;
+        margin: 3% auto;
+
+    }
+    .our-team .container{
+        width: 100%;
+    }
+    .team-member{
+        width:40%;
+    }
+    .foot{
+        width: 95%;
+    }
+    .food-box{
+        max-width: 90%;
+        margin: 3% auto;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .mobile-menu span{
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    } 
+    .logo{
+        display: block;
+        width: 21%;
+       
+    }
+    .food-search{
+        height:50vh;
+       }
+
+    .our-team .container{
+        width: 90%;
+    }
+    .team-member{
+        width: 100%;
+    }
+    .tbl-full thead{
+        display: none;
+    }
+    .tbl-full , .tbl-full tbody , .tbl-full tr , .tbl-full td{
+        display: block;
+        width: 95%;
+    }
+    .tbl-full tr{
+        margin-bottom: 15px;
+    }
+    .tbl-full td{
+        border: 1px solid #ddd;
+        text-align: right;
+        padding-left: 30%;
+        position: relative;
+    }
+    .tbl-full td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: left;
+    }
+    .h2-padding{
+        padding: 20% 0 0 0;
+    }
+}
+@media screen and (max-width:600px){
+   .signupbox{
+      width: auto;
+      top:-40%
+   }
+  
+
+}
+@media screen and (max-width:500px){
+    
+}

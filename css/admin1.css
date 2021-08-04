@@ -1,0 +1,202 @@
+/*
+Author : Faria Hasan, Naib Uddin
+Theme : Food ordering website
+version : 1.0
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'work-sans','quicksand';
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.tbl-full{
+    width: 100%;
+  border-collapse: collapse;
+}
+.tbl-30{
+    width: 30%;
+}
+table tr th{
+    padding: 1%;
+    text-align: center;
+}
+table tr td{
+    text-align: center;
+    padding: 1%;
+}
+
+
+.button{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn-primary{
+    background-color: coral;
+    padding: 1%;
+    color: white;
+    font-weight: 700;
+}
+.btn-primary:hover{
+    background-color:teal ;
+}
+.btn-secondary{
+    background-color: #7bed9f;
+    padding: 1%;
+    color: black;
+    font-weight: 700;
+}
+.btn-secondary:hover{
+    background-color:#2ed573 ;
+}
+.btn-danger{
+    background-color: #ff6b81;
+    padding: 1%;
+    color: black;
+    font-weight: 700;
+}
+.btn-danger:hover{
+    background-color:#ff4757 ;
+}
+
+.success{
+    font-size: 21px;
+    font-weight: 600;
+    color: #2ed573 ;
+}
+.error{
+    font-size: 21px;
+    font-weight: 600;
+    color:#ff4757 ;
+}
+/* CSS for menu*/
+.menu{
+    border-bottom: 1px solid whitesmoke;
+}
+.menu ul{
+    list-style-type: none;
+    
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: coral;
+}
+.menu ul li a:hover{
+    color: teal;
+}
+
+/* CSS for Main content*/
+.main-content{
+    background-color:snow ;
+    padding: 3% 0;
+}
+.col-4{
+    width: 18%;
+    background-color:white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+
+}
+
+/* CSS for Footer*/
+.foot{
+    width: 45%;
+    float: left;
+    margin-top: 40px;
+   
+}
+.logo1{
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 10px;
+}
+.footer
+{ 
+    background-color: whitesmoke;
+}
+.foot h3
+{
+    margin-bottom: 10px;
+    font-size: 29px;
+}
+.email{
+    margin-bottom: 10px;
+    font-size: 21px;
+    color: teal;
+    font-weight: 700;
+}
+.mobile{
+    font-size: 18px;
+    font-weight: 600;
+    color: teal;
+}
+.copy{
+    padding: 3rem;
+    text-align: center;
+}
+.social-link{
+    margin-top: 20px;
+}
+.social-link ul li{
+    display:inline-block;
+    margin: 0 5px;
+}
+.social-link ul li a{
+    color:black;
+
+}
+.social-link ul li a:link i::before{
+    background: whitesmoke;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: .5s linear;
+}
+.social-link ul li a:hover i::before
+{
+    background-color: teal;
+    color: white;
+    transform: rotate(360deg);
+}
+
+
+
+
